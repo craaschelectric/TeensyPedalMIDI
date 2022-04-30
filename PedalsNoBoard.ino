@@ -14,13 +14,7 @@
 #include <MIDI.h>
 
 int MIDIChannel=12; 
-char Flags=0;
-const char MIDILED=0;
-// bit 0 - if 1, then LEDs are only controlled via MIDI commands (TODO)
-// bit 1 - if 1, then initial LED state is not flashed
 const int NoteBase=36;
-unsigned char LoopCounter=0;
-int keystate=0;
 unsigned long CurrentState=0;
 unsigned long PreviousState=0;
 int LoopDelay=10;
